@@ -14,3 +14,16 @@ Para esta entrega y teniendo en cuenta los resultados de las transformaciones an
   * No existian duplicados y la información estaba validada en el DWH, lo que hizo más sencillo el EDA.
 # Respecto a las transformaciones, elimine algunas variables que no representaban información importante en el analisis.
 # Elimine Variables que estan relacionadas, tales como Importe de Cuota y Cantidades de Cuotas Pagadas y Atrasadas.
+
+
+02/11/2023:
+En esta entrega se realizo El Cross Validation.
+Tambien se avanzo en la utilizacion de las librerias de Grid Search y de Random Search, con estas conclusiones:
+# Respecto a Grid Search: No se pudo ejecutar, el entrenamiento del modelo Random Forest, estuvo ejecutandose por casi 120 minutos sin resultados.
+# Respecto a Random Search:
+ * Se obtuvieron resultados superiores al Cross Validation Score, en un 2%.
+ * El rendimiento fue superior al Grid, en el sentido que el tiempo demandado fue menor a 10 minutos.
+ * Versus el Modelo Random Forest Tradiciona, con hiperparametros manuales, tuvo un mejor resultado, en 2%.
+
+
+ 
