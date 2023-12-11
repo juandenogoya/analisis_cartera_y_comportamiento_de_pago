@@ -26,4 +26,13 @@ Tambien se avanzo en la utilizacion de las librerias de Grid Search y de Random 
  * Versus el Modelo Random Forest Tradiciona, con hiperparametros manuales, tuvo un mejor resultado, en 2%.
 
 
- 
+ 10/12/2023:
+ En esta ultima actualizacion:
+ * Se aplicaron sobre el DS, tecnicas de Agrupación para poder identificar insight desde diferentes analisis.
+ * Se realizaron graficos utilizando las diferentes librerias de Matplotlib y Seaborn.
+ * Aplicaron tecnias de Split, para luego comenzar con las transformaciones.
+ * Se trebajo con el Modelo de Random Forest.
+ * Se realizo Cross Validation sobre el Random Forest.
+ * Se aplicaron tecnicas de Random Search respecto de los Hiperparametros.
+ * Se aplicaron tecnicas de Bayesian Search sobre hiperparametros, para esto se aplicaron codificación de Label Encoder sobre las Variable Dependiente que es categorica.
+
