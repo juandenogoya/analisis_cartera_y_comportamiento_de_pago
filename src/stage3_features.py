@@ -73,8 +73,14 @@ def run_feature_engineering():
 
     # Predict
     y_pred = rf.predict(X_test_scaled)
+
+    accuracy = accuracy_score(y_test, y_pred)
+    report = classification_report(y_test, y_pred, output_dict=True)
+
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred))
+
+    return feature_imp_df, accuracy, report
 
 if __name__ == "__main__":
     run_feature_engineering()

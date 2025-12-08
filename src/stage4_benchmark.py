@@ -74,5 +74,7 @@ def run_benchmark():
     results_df = pd.DataFrame(results).sort_values(by='F1-Score (Weighted)', ascending=False)
     print(results_df)
 
+    return results_df
+
 if __name__ == "__main__":
     run_benchmark()

@@ -57,10 +57,15 @@ def run_imbalance_fix():
     y_pred = rf.predict(X_test_scaled)
 
     # Evaluate
+    accuracy = accuracy_score(y_test, y_pred)
+    report = classification_report(y_test, y_pred, output_dict=True)
+
     print("--- Evaluation Results (Leakage Removed + SMOTE + Balanced) ---")
-    print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
+    print(f"Accuracy: {accuracy:.4f}")
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred))
+
+    return accuracy, report
 
 if __name__ == "__main__":
     run_imbalance_fix()
